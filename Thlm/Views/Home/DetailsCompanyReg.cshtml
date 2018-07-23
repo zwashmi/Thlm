@@ -1,0 +1,42 @@
+﻿@model thlem.Models.RegCompanyViewModel
+
+@{
+    ViewData["Title"] = "Details Company Register";
+}
+
+<h2>Details Company Register </h2>
+
+<div>
+    <h4>RegCompany View Model</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Brief)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Brief)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "EditCompanyRegister", new {  id = Model.Id }) |
+    <a asp-action="CompanyRegiList">Back to List</a>
+</div>
