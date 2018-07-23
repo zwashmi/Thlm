@@ -59,7 +59,7 @@ namespace thlem.Controllers
             _repoistory.SaveChange();
             return RedirectToAction("CompanyRegiList");
         }
-        [Authorize(Roles ="Admin")]
+        
         public IActionResult CompanyRegiList()
         {
             var register = _repoistory.GetAllCompanyReg();
