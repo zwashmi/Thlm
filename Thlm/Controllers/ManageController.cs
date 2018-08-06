@@ -16,6 +16,7 @@ using Thlm.Services;
 
 namespace Thlm.Controllers
 {
+    //mac 
     [Authorize]
     [Route("[controller]/[action]")]
     public class ManageController : Controller
